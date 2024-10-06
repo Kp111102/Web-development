@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #e50914;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+}
+
+/* Header Styles */
+.header {
+    background: #222;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #e50914;
+}
+
+/* Hero Section */
+.hero-about {
+    background: url('about-hero.jpg') no-repeat center center/cover;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Company Overview Section */
+.overview {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.overview h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.overview p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Our Team Section */
+.team {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #e50914;
+}
+
+.team-member h3 {
+    color: #e50914;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Our History Section */
+.history {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.history h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.history-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.history-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #e50914;
+}
+
+.history-item h3 {
+    color: #e50914;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.history-item p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #e50914;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #222;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.cta .btn:hover {
+    background-color: #ff2626;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

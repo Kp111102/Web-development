@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fitness & Sport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Fitness & Sport</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to promoting health and fitness through comprehensive workout programs, personalized training, and sport activities. Whether you’re a beginner or a seasoned athlete, we’ve got something for you!</p>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="fitness.jpg" alt="Fitness Programs">
+                    <h3>Fitness Programs</h3>
+                    <p>Structured workout plans that help you achieve your health and fitness goals.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="sports.jpg" alt="Sport Activities">
+                    <h3>Sport Activities</h3>
+                    <p>Join our community in football, basketball, swimming, and more!</p>
+                </div>
+                <div class="feature-card">
+                    <img src="training.jpg" alt="Personal Training">
+                    <h3>Personal Training</h3>
+                    <p>One-on-one training sessions designed for your unique goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Contact Section with Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Use the form below to get in touch.</p>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Fitness & Sport. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

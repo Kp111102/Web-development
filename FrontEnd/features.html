@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/homepage/index.css">
+  <link rel="stylesheet" href="C:\Users\Admin\Desktop\c\New folder\features\styles.css">
+  <link rel="logo" href="images/Logo.png">
+  <title>Fitness Prototype</title>
+
+  <script src="https://kit.fontawesome.com/b852651426.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section id="nav-sec">
+    <a href="index.html"><img src="images/Logo.png" class="logo" alt="Logo"></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workout.html">Workouts</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="result.html">Results</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a><i class="fa-solid fa-user"></i></a></li>
+
+      </ul>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+        <h2>Aspects</h2>
+        <p>We are dedicated to promoting health and fitness through comprehensive workout programs, personalized training, and sport activities. Whether you’re a beginner or a seasoned athlete, we’ve got something for you!</p>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <div class="container">
+        <h2>Our Features</h2>
+        <p><br></p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fitness Programs">
+                <h3>Fitness Programs</h3>
+                <p>Structured workout plans that help you achieve your health and fitness goals.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.pexels.com/photos/3076516/pexels-photo-3076516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sport Activities">
+                <h3>Sport Activities</h3>
+                <p>Join our community in football, basketball, swimming, and more!</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.pexels.com/photos/903171/pexels-photo-903171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>One-on-one training sessions designed for your unique goals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Updated Contact Section with Form -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Use the form below to get in touch.</p>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Fitness & Sport. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-weight: 600;
+}
+
+/* Body Background */
+body {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Adds a gradient to the page */
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom, rgba(60, 120, 200, 0.8), rgba(52, 83, 168, 0.4)); /* Gradient overlay */
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+/* About Section */
+.about {
+    background: url('about-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.about:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 254, 255, 0.949); /* Transparent overlay */
+}
+
+.about h2, .about p {
+    position: relative;
+    z-index: 2;
+    color: rgb(23, 22, 22);
+}
+
+.about p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+/* Features Section */
+.features {
+    background:  rgb(183, 22, 22);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(86, 113, 199, 0.1);
+    position: relative;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover img {
+    transform: scale(1.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(34, 49, 104, 0.2);
+}
+
+.feature-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.feature-card p {
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    background: url('contact-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(183, 22, 22); /* Overlay */
+}
+
+.contact h2, .contact p, .contact form {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    color: #376dd0;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 10px rgba(58, 88, 136, 0.2);
+    outline: none;
+}
+
+.contact .btn {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background-color: #feb47b;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 9, 30, 0.925);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

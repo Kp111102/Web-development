@@ -1,0 +1,753 @@
+#hero {
+  background-image: url('images/fitness-sample.mp4');
+  padding: 400px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-height: 140vh;
+  min-height: 100vh;
+  height: 112vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-info {  
+  position: absolute;
+  top: 40%;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  min-height: 140vh; /* Ensures it always covers the screen */
+  min-width: 100vw;
+  filter: blur(2px); /* Blur effect */
+  object-fit: cover; /* Ensures it covers the entire area without distortion */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Keeps video behind content */
+}
+
+
+#hero button {
+  background-image: url('../../images/redsplash.png');
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+#hero button:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+
+.hero-video {
+  min-height: 500px;
+}
+
+/*
+--------------------------------
+explanation section
+--------------------------------
+*/
+
+#explanation-sec {
+  background-image: url('../../images/explain-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+  margin-top: -120px; 
+  overflow: hidden;
+  min-height: 974px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.explain-img {
+  
+  z-index: 1;
+}
+
+.explain-h1 {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+  line-height: 70px;
+  margin-bottom: 80px;
+}
+
+.explain-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  width: 100vw;
+  height: 100vh; 
+  padding: 0 20px;
+}
+
+.workoutIcon1 {
+  max-height: 30%;
+  width: 34vh;
+  padding-left: 02%; 
+}
+
+.workoutIcon2 {
+  height: 53vh;
+  width: 50vh;
+}
+
+.workoutIcon3 {
+  height: 43vh;
+  padding-left: 10%;
+}
+
+.explain-div .workouticondiv {
+  min-height: 50%;
+  min-width: 50%;
+  padding-right: 2%;
+}
+
+.workoutIcon1,
+.workoutIcon2,
+.workoutIcon3 {
+  max-height: 20%;
+}
+
+.step-letters {
+  color: red;
+  font-size: 6vh;
+}
+
+.explain-div .steps-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; 
+  padding: 20px; 
+  min-width: 60%;
+  line-height: 1;
+}
+
+.h5-steps {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+}
+
+.acc-createinhome {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 59%, rgba(255,0,0,1) 100%);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+
+.acc-createinhome::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgb(255, 6, 6);
+  transform-origin: left;
+  transform: scaleX(0);
+  top: 90%;
+  left: 0%;
+  transition: 0.5s ease-in-out;
+}
+
+.acc-createinhome:hover::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgb(255, 6, 6);
+  transform: scaleX(1);
+  top: 90%;
+  left: 0%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*
+--------------------------------
+features section
+--------------------------------
+*/
+
+#feature {
+  min-width: 42vw;
+  overflow: hidden;
+}
+
+.feature-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+  border: 1px solid #cce7d0;
+  display: inline-block;
+  padding: 20px 40px;
+  transition: 0.5s ease-in-out;
+}
+
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.2);
+}
+
+.features-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .fe-box .feature-desc {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  font-size: 15px;
+  line-height: 1;
+  border-radius: 4px;
+  color: rgb(70, 62, 221);
+  background-color: #fddde4;
+}
+
+.learn-more-div {
+  height: 10vh;
+  padding-left: 35vw;
+  padding-top: 1vh;
+}
+
+.learn-more-text {
+  color: black;
+  font-weight: 600;
+  font-size: 250%;
+  transition: 0.5s ease-in-out;
+}
+
+.learn-more-text:hover {
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.learn-anchor {
+  text-decoration: none;
+  min-width: 411px;
+}
+
+/*
+---------------------------------------
+device integration section
+---------------------------------------
+*/
+
+#wdi {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+#wdi .wdi-outer-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slideshow-container {
+  width: 30vw;
+  height: 10%;
+  min-width: 20vw;
+  min-height: 10%;
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 40px;
+  border: 2px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.slides {
+  display: none;
+  background-color: black;
+  border-radius: 40px;
+  padding-bottom: 5%;
+  padding: 5%;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.wdi-desc-title {
+  color: white;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 0.5s ease-in-out;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.wdi-desc-text {
+  color: white;;
+}
+
+.slides {
+  min-width: 50%;
+}
+
+
+.wdi-box div img {
+  border-radius: 25px;
+  height: 80vh;
+  width: 60vw;
+}
+
+.wdi-box {
+  width: 60vw;
+  height: 80vh;
+  object-fit: contain;
+}
+
+#wdi .slideshow-container .slides img {
+  height: 50vh;
+  width: 30vw;
+  min-width: 28vw;
+}
+
+#wdi .slideshow-container .slides img:nth-child(2) {
+  height: 200px;
+}
+
+#wdi .slideshow-container .slides div {
+  padding: 0px 30px;
+}
+
+#wdi .slideshow-container .slides div h5 {
+  color: black;
+}
+
+
+/* 
+--------------------------------
+testimonials 
+--------------------------------
+*/
+
+#testimonials {
+  text-align: center;
+  color: lightgreen;
+  margin-top: 10%;
+}
+
+.testimonials-title {
+  color: black;
+}
+
+.name {
+  color: black;
+}
+
+#testimonials .profile1 {
+  width: 33%;
+  min-width: 30%;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease-in-out;
+}
+
+#testimonials .profile1:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#testimonials .profile1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#testimonials .profile1 .details {
+  width: 100%;
+}
+
+#testimonials .profile1 .details p {
+  color: black;
+  overflow-wrap: break-word;
+}
+
+.test-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+---------------------------------------
+Call to Action
+---------------------------------------
+*/
+
+#banner {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 0;
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/cta-img.jpeg");
+  background-size: cover;
+  background-position: center;
+  background: rgb(5, 15, 44);
+  z-index: -1; 
+}
+
+#banner h4 {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 2vh;
+}
+
+#banner h2 {
+  font-size: 56px;
+  color: #ffffff;
+  line-height: 15vh;
+}
+
+#banner h2 span {
+  color: red;
+}
+
+#banner button:hover {
+  color: red;
+  border-color: red;
+  background-color: white;
+}
+
+/*
+-----------------------------------------
+footer section
+-----------------------------------------
+*/
+
+footer {
+  display: flex;
+  background-color: rgb(19, 18, 18);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+footer .col {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0; 
+}
+
+footer a {
+  font-size: 13px;
+  margin: 10px;
+  text-decoration: none;
+  color: #ffffff; 
+  transition: 0.5s ease-in-out;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #ffffff;
+  padding-right: 4px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover, 
+footer a:hover {
+  color: red;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+/* 
+------------------------------
+tablet
+------------------------------
+*/
+
+@media (max-width:799px) {
+
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 30px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+    display: flex;
+  }
+
+  #login-icon {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #hero .hero-info {
+    position: relative;
+    top: 0;
+    margin-left: -13%;
+    padding: 0 10px;
+    min-width: 100vw;
+  }
+
+  #hero .hero-info h2 {
+    line-height: 10vh;
+  }
+
+  #hero .hero-info h4 {
+    line-height: 5vh;
+
+  }
+  #hero .hero-info h1 {
+    line-height: 8vh;
+  }
+
+  #explanation-sec .explain-div .workouticondiv {
+    display: none;
+  }
+  
+  #explanation-sec .explain-div .steps-div {
+    width: 100vw;
+  }
+
+  .h5-steps {
+    font-size: 30px;
+  }
+
+  .step-letters {
+    font-size: 40px;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 15px;
+  }
+
+  .wdi-outer-div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .slideshow-container {
+    width: 80vw;
+    margin-right: 37px;
+  }
+
+  #wdi .wdi-outer-div .slideshow-container .slides img {
+    width: 80vw;
+    padding-right: 20px;
+  }
+
+  .wdi-box{
+    width: 100vw;
+  }
+  #wdi .wdi-outer-div .wdi-box div img {
+    width: 100vw;
+    border-radius: 0px;
+  }
+
+  .test-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #testimonials .test-div .profile1 {
+    width: 100vw;
+  }
+
+  #banner h4 {
+    font-size: 40px;
+    line-height: 11vh;
+  }
+
+  #banner h2 {
+    line-height: 7vh;
+  }
+
+  #banner button {
+    margin-top: 2vh;
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+
+  .section-p1 .col {
+    display: block;
+    width: 100vw;
+    font-size: 3vh;
+  }
+
+  .section-p1 .col h4 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .section-p1 .col a {
+    font-size: 17px;
+  }
+
+  .copyright {
+    font-size: 40%;
+  }
+}
